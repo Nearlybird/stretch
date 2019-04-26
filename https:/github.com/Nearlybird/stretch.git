@@ -1,0 +1,10 @@
+def stretch(word, num=2, letters="abcdefghijklmnopqrstuvwxyz"):
+    final_word = ""
+    for char in range(len(word)):
+        if letters.find(word[char]) >= 0:
+            final_word += word[char]*num
+        else:
+            final_word += word[char]
+    return final_word
+
+print(stretch("nate"))
